@@ -1,0 +1,18 @@
+import random
+secret = random.randint(1,10)
+print('---一起玩游戏---')
+temp=input("猜一猜老子心里想的是什么鬼玩意儿：")
+guess=int(temp)
+while guess!=8:
+    temp=input("哎呀，沙雕你猜错了阿：")
+    guess=int(temp)
+    if guess==secret:
+        print("卧槽你猜中了")
+        print("他妈的你小子运气不错啊")
+    else:
+        if guess>secret:
+            print("儿子，大了大了")
+        else:
+            print("孙子，你猜小了")
+        
+print("游戏结束了沙雕")
